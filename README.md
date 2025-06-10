@@ -81,25 +81,33 @@ Access the server at `http://localhost:8080/api/rules`.
 
 ```
 my-java-sdk/
-├── src
-│   ├── main
-│   │   ├── java/com/mysdk
+├── lib/
+│   ├── caffeine-3.1.8.jar
+│   ├── demo-0.0.1-SNAPSHOT.jar
+│   ├── demo-0.0.1-SNAPSHOT-plain.jar
+│   ├── jedis-4.4.3.jar
+│   └── nanohttpd.jar
+├── src/
+│   ├── main/
+│   │   ├── java/com/mysdk/
 │   │   │   ├── ApiClient.java
 │   │   │   ├── ApiResponse.java
 │   │   │   ├── ApiServer.java
 │   │   │   ├── CacheRefresher.java
+│   │   │   ├── TestApiClient.java
 │   │   │   ├── annotations/
-│   │   │   │   ├── RestController.java
+│   │   │   │   ├── GetMapping.java
 │   │   │   │   ├── RequestMapping.java
-│   │   │   │   └── GetMapping.java
-│   │   │   ├── controllers/
-│   │   │   │   └── ApiController.java
-│   │   │   └── TestApiClient.java
-│   │   └── resources
-│   └── test/java/com/mysdk
+│   │   │   │   └── RestController.java
+│   │   │   └── controllers/
+│   │   │       └── ApiController.java
+│   │   └── resources/
+│   └── test/
+│       └── java/com/mysdk/
 ├── README.md
 ├── pom.xml
 └── sources.txt
+
 ```
 
 ---
@@ -115,4 +123,4 @@ my-java-sdk/
 ## Author
 
 **Gopi Chand Gopu**  
-[gopichand@example.com](mailto:gopichand915915@example.com)
+[gopichand915915@example.com](mailto:gopichand915915@example.com)
